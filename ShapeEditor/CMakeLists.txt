@@ -4,7 +4,12 @@ project(ShapeEditor)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(ShapeEditor
-        executable/main.cpp)
+    executable/main.cpp
+    executable/src/EditorView/EditorView.h
+    executable/src/EditorView/EditorView.cpp
+    executable/src/Canvas/Canvas.h
+    executable/src/Canvas/Canvas.cpp
+)
 
 set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
