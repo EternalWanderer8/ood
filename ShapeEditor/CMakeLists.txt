@@ -9,7 +9,15 @@ add_executable(ShapeEditor
     executable/src/EditorView/EditorView.cpp
     executable/src/Canvas/Canvas.h
     executable/src/Canvas/Canvas.cpp
-)
+    shape_editor/include/Model/EditorData/EditorData.h
+    shape_editor/src/Model/Shape/IShape.h
+    shape_editor/include/Common/Point.h
+    shape_editor/include/Common/Color.h
+    shape_editor/src/Model/Shape/ShapeType.h
+    shape_editor/src/Model/EditorData/IEditorDataObserver.h
+    shape_editor/src/Model/Shape/Shape.h
+    shape_editor/src/Model/Shape/Shape.cpp
+    shape_editor/src/Model/EditorData/EditorData.cpp)
 
 set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
